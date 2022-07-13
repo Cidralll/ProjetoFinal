@@ -3,13 +3,14 @@ import "./Button.scss";
 
 interface Props {
     type?: "button" | "submit" | "reset" | undefined,
-    onSubmit: (e: React.MouseEvent<HTMLButtonElement>) => void
+    //onSubmit: (e: React.MouseEvent<HTMLButtonElement>) => void
+    onClick?: () => void;
     children?: React.ReactNode
 }
 
-export default function Button({onSubmit, type, children}: Props) {
+export default function Button({onClick, type, children}: Props) {
     return (
-        <button onSubmit={onSubmit} type={type} className='Button' >
+        <button onSubmit={onClick} type={type} className='Button' >
             {children}
         </button>
     )
