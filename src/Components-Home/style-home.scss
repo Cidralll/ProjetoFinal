@@ -1,0 +1,62 @@
+.header-home {
+    display: flex;
+}
+
+.img-logo {
+    margin-top: 1%;
+    margin-left: 2.5%;
+}
+
+.div-time {
+    margin-left: 30%;
+}
+
+.div-temperature {
+    margin-left: 33%;
+}
+
+// main
+.main-home {
+    display: flex;
+
+    .div-text {
+        margin-left: 23%;
+    }
+}
+
+@media(max-width: 1440px) {
+    .main-home {
+    
+        .div-text {
+            margin-left: 5%;
+        }
+    }
+
+    .div-time {
+        margin-left: 30%;
+    }
+
+    .div-temperature {
+        margin-left: 22%;
+    }
+
+    //mudar em ball e footer
+}
+
+@media(max-width: 1024px) {
+    .main-home {
+    
+        .div-text {
+            margin-left: 0;
+            margin-right: 2%;
+        }
+    }
+
+    .div-time {
+        margin-left: 20%;
+    }
+
+    .div-temperature {
+        margin-left: 12%;
+    }
+}

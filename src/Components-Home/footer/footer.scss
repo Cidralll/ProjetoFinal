@@ -1,0 +1,174 @@
+.footerHome {
+    display: flex;
+    height: 12.9vh;
+    background-color: #33383D ;
+}
+//espaço entre elementos
+.space1 {
+    width: 8vh;
+}
+
+// primeiro texto
+.text-inf {
+    text-align: right;
+    width: 85vh;
+
+    .text {
+        margin-left: 25vh;
+        margin-top: 5vh;
+        color: #FFFFFF;
+    }
+}
+
+// barra de divisão
+.div-space {
+    width: 1px;
+    height: 9vh;
+    background-color: #FFFFFF;
+    margin-top: 2VH;
+    margin-left: 3vh;
+}
+
+// refresh
+.div-refresh{
+    margin-left: 10vh;
+    width: 10vh;
+
+    .p-refresh {
+        margin-left: 2vh;
+        text-align: right;
+        margin-top: 4.5vh;
+        color: #FFFFFF;
+    }
+}
+
+// TIME
+.div-timeNumber {
+    margin-left: 5vh;
+
+    .div-number {
+        font-size: 5vh;
+        color: #FFFFFF;
+        font-weight: bold;
+        margin-top: -3vh;
+    }
+    .div-seconds {
+        margin-top: -5.2vh;
+        color: #FFFFFF;
+    }
+}
+
+.space2 {
+    width: 32vh;
+}
+
+// button 1
+.div-button1 {
+    margin-left: 10vh;
+    width: 15.5vh;
+    
+}
+.div-button1 button {
+    width: 15.5vh;
+    height: 12.9vh;
+    border: none;
+    color: #C13216;
+    font-size: 1.5vh;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+// button 2
+.div-button2 {
+    width: 18vh;
+}
+.div-button2 button {
+    width: 15.5vh;
+    height: 12.9vh;
+    border: none;
+    font-size: 1.5vh;
+    color: #FFFFFF;
+    background-color: #33383D;
+    cursor: pointer;
+}
+
+// 1440
+@media(max-width: 1440px) {
+    .footerHome {
+        height: 11.9vh;
+    }
+
+    // primeiro texto
+    .text-inf {
+        width: 85vh;
+
+        .text {
+            margin-left: 15vh;
+            margin-top: 2vh;
+        }
+    }
+
+    // button 1
+    .div-button1 {
+        margin-left: 10vh;
+        width: 15.5vh;
+        
+    }
+    .div-button1 button {
+        width: 15.5vh;
+        height: 11.9vh;
+    }
+
+    // button 2
+    .div-button2 {
+        width: 18vh;
+    }
+    .div-button2 button {
+        height: 11.9vh;
+        height: 12.9vh;
+    }
+}
+
+// 1024
+@media(max-width: 1024px) {
+    .footerHome {
+        height: 11.9vh;
+    }
+
+    .space1 {
+        width: 1vh;
+    }
+    // primeiro texto
+    .text-inf {
+        width: 85vh;
+
+        .text {
+            margin-left: 5vh;
+            margin-top: 2vh;
+        }
+    }
+
+    .space2 {
+        width: 10vh;
+    }
+
+    // button 1
+    .div-button1 {
+        margin-left: 10vh;
+        width: 15.5vh;
+        
+    }
+    .div-button1 button {
+        width: 15.5vh;
+        height: 11.9vh;
+    }
+
+    // button 2
+    .div-button2 {
+        width: 18vh;
+    }
+    .div-button2 button {
+        height: 11.9vh;
+        height: 12.9vh;
+    }
+}

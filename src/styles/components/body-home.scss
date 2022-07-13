@@ -1,0 +1,137 @@
+.body-main {
+    display: flex;
+    background-color: #33383D;
+    height: 100vh;
+
+    .section-inputs{
+        width: 50%;
+    }
+    .section-img {
+        width: 50%;
+    }
+}
+
+//Part 1 da tela
+h1 {
+    color: #E0E0E0;
+    font-size: 3.753rem;
+    font-weight: 400;
+    margin-left: 25%;
+    margin-top: 20%;
+}
+
+.sub-title {
+    color: #E0E0E0;
+    margin-left: 25%;
+    width: 18.813rem;
+    font-size: 1.1rem;
+}
+
+.login {
+    color: #E0E0E0;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 18.813rem;
+    font-size: 2.375rem;
+    margin-block-end: 0;
+   
+}
+
+.input-login {
+    margin-left: 25%;
+    margin-top: 4%;
+}
+.input-login::placeholder {
+    color: #E0E0E0;
+   
+}
+
+
+.div-user {
+    display: flex;
+
+    .img-user {
+        margin-top: 3.6rem;
+        margin-left: 1rem;
+    }
+}
+
+.div-password {
+    display: flex;
+
+    .img-password {
+        margin-top: 3.5rem;
+        margin-left: 1rem;
+    }
+}
+
+.Button {
+    margin-left: 25%;
+    margin-top: 8%;
+}
+
+// Part 2 da tela
+.img-background {
+    width: 99vh;
+    height: 100vh;
+    position: relative;
+
+    
+}
+.img-logoCompass {
+    position: absolute;
+    top: 4%;
+    margin-left: 17%;
+}
+
+// PARA NOT 1140px
+@media(max-width: 1440px) {
+    .img-background {
+        width: 100.5vh;
+        height: 100vh;
+        position: relative;
+    }
+
+    h1 {
+        margin-left: 25%;
+        margin-top: 4%;
+    }
+ 
+    .login {
+        margin-left: 25%;
+        margin-top: 5%;
+        width: 18.813rem;
+        margin-block-end: 0;
+    }
+    
+}
+//PARA NOT 1024PX
+@media(max-width: 1024px) {
+    .img-background {
+        width: 71.5vh;
+        height: 100vh;
+        position: relative;
+    }
+
+    h1 {
+        margin-left: 15%;
+        margin-top: 4%;
+    }
+ 
+    .login {
+        margin-left: 15%;
+        margin-top: 5%;
+        width: 18.813rem;
+        margin-block-end: 0;
+    }
+    
+    .input-login {
+        margin-left: 15%;
+        margin-top: 4%;
+    }
+    
+    .Button {
+        margin-left: 15%;
+        margin-top: 8%;
+    }
+}
