@@ -1,13 +1,6 @@
 export default function ValidationPassword(password: string) {
     
     let res = Validation(password);
-    
-    if (res) {
-        console.log('A senha é valida!')
-    }else if (!res) {
-        console.log('A senha é invalida')
-    }
-
     return res;
 }
 
