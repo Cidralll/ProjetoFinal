@@ -1,5 +1,4 @@
 import React from "react";
-import ValidationUser from "../Validation/user";
 import './input-login.scss';
 
 interface Props {
