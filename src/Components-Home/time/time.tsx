@@ -19,7 +19,7 @@ export default function Time() {
         let newDate = new Date()
         let newMinute = newDate.getMinutes()
 
-        if (minutes != newMinute) {
+        if (minutes !== newMinute) {
             Time(hour, newMinute)
             setTimeout(() => {
                 setCont(aux);
