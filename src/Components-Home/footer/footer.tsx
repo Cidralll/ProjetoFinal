@@ -14,8 +14,7 @@ export default function FooterHome() {
                 stopwatch = stopwatch;
                 return setStopwatch(stopwatch - 1) 
             }else {
-                stopwatch = 60;
-                return setStopwatch(stopwatch)
+                return window.location.href = "http://localhost:3000/"
             }
         }, 1000)
     }
