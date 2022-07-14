@@ -6,6 +6,7 @@ export function ImgPassword() {
             backgroundImage: `url(${"/img/icon-password.png"})`,
         }}
         className='img-password'
+        id='img-password'
         >
         </div>
     )
