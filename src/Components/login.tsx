@@ -12,21 +12,26 @@ import ValidationUser from "./Validation/user";
 
 
 export default function Login() {
+    //Recebe valor do input do usuario
     let [userValue, setUserValue] = useState('');
     const handleInputUserValue = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUserValue(event.currentTarget.value)
     }
 
+    // Recebe o valor do input de password
     let [passwordValue, setPasswordValue] = useState('');
     const handleInputPasswordValue = (event: React.ChangeEvent<HTMLInputElement>) => {
         setPasswordValue(event.currentTarget.value)
     }
 
+    // Recebe o estado do span de erro
     let [errorUser, setErrorUser] = useState(false);
     let [errorPassword, setErrorPassword] = useState(false);
+    // função anonima para chamar funções que validam os campos usuario e de senha
     const valueInputs = (event: React.FormEvent) => {
         event.preventDefault();
 
+        // valida senha
         let validationPassword = ValidationPassword(passwordValue);
         if (!validationPassword) {
             setErrorPassword(true); 
@@ -34,6 +39,7 @@ export default function Login() {
             setErrorPassword(false);
         }
 
+        // valida password
         let validationUser = ValidationUser(userValue);
         if (!validationUser) {
             setErrorUser(true);
@@ -41,19 +47,32 @@ export default function Login() {
             setErrorUser(false)
         }
 
+        // se estiver tudo certo passa para pagina home
         if (validationPassword && validationUser) {
             window.location.href = 'http://localhost:3000/home';
         }
 
     }
+    // Valida se existe erro em span
     let [spanError, setSpanError] = useState('');
     function SpanError(error: boolean) {
         if (error) {
+            //se erro for true ele retorna class de erro e passa mensagem do erro
+            let inputUser = document.getElementById('input-user');
+            inputUser?.classList.add('spanInputError');
+            let inputPassword = document.getElementById('input-password')
+            inputPassword?.classList.add('spanInputError')
             return setSpanError('Ops, usuário ou senha inválidos. Tente novamente!')
         }else if (!error) {
+            // se não existir erro ele remove a classe erro e não reotna msg de erro
+            let inputUser = document.getElementById('input-user');
+            inputUser?.classList.remove('spanInputError');
+            let inputPassword = document.getElementById('input-password')
+            inputPassword?.classList.remove('spanInputError')
             return setSpanError('')
         }
     }
+    // Se mudar o estado de usuario ou senha ele chama a validação
     useEffect(() => {
         SpanError(errorPassword)
     }, [errorPassword])

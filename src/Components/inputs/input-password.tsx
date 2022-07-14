@@ -1,5 +1,4 @@
 import React from "react";
-import ValidationPassword from "../Validation/password";
 import './input-login.scss';
 
 interface Props {
@@ -9,7 +8,7 @@ interface Props {
 
 export default function InputPassword({onChange}: Props) {
     return (
-        <input placeholder='Senha' type='password' className="input-login"  onChange={onChange}></input>
+        <input placeholder='Senha' type='password' className="input-login" id='input-password' onChange={onChange}></input>
         
     )
 }
