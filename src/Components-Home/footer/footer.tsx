@@ -44,7 +44,7 @@ export default function FooterHome() {
             </div>
             <div className='space2'></div>
             <div className='div-button1'>
-                <button onClick={ () => window.location.href = 'https://www.google.com/'} >Continuar navegando</button>
+                <button onClick={ () => window.open("https://www.google.com", "_blank")} >Continuar navegando</button>
             </div>
             <div className='div-button2'>
                 <button onClick={ () => window.location.href = 'http://localhost:3000/'}>Logout</button>
