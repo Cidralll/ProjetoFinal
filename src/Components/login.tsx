@@ -3,6 +3,8 @@ import Button from "./Button/Button";
 import { ImgBackground } from "./img-background/img";
 import { ImgPassword } from "./img-input/img-password";
 import { ImgUser } from "./img-input/img-user";
+import removeImageUser from "./img-input/remove-imageUser";
+import removeImagePassword from "./img-input/remove-imgPassword";
 import Inputs from "./inputs/input-form";
 import InputPassword from "./inputs/input-password";
 import { ImgLogoCompass } from "./Logo-Compass/Logo-Compass";
@@ -15,13 +17,15 @@ export default function Login() {
     //Recebe valor do input do usuario
     let [userValue, setUserValue] = useState('');
     const handleInputUserValue = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setUserValue(event.currentTarget.value)
+        setUserValue(event.currentTarget.value);
+        removeImageUser();
     }
 
     // Recebe o valor do input de password
     let [passwordValue, setPasswordValue] = useState('');
     const handleInputPasswordValue = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setPasswordValue(event.currentTarget.value)
+        setPasswordValue(event.currentTarget.value);
+        removeImagePassword();
     }
 
     // Recebe o estado do span de erro

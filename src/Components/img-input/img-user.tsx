@@ -6,6 +6,7 @@ export function ImgUser() {
             backgroundImage: `url(${"/img/icon-user.png"})`,
         }}
         className='img-user'
+        id='img-user'
         >
         </div>
     )
