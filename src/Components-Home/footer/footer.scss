@@ -14,9 +14,11 @@
     width: 85vh;
 
     .text {
-        margin-left: 25vh;
+        margin-left: 22vh;
         margin-top: 5vh;
         color: #FFFFFF;
+        font-weight: 300;
+        font-size: 1.5vh;
     }
 }
 
@@ -39,6 +41,7 @@
         text-align: right;
         margin-top: 4.5vh;
         color: #FFFFFF;
+        font-weight: 300;
     }
 }
 
@@ -55,6 +58,7 @@
     .div-seconds {
         margin-top: -5.2vh;
         color: #FFFFFF;
+        font-weight: 300;
     }
 }
 
@@ -76,6 +80,7 @@
     font-size: 1.5vh;
     background-color: #FFFFFF;
     cursor: pointer;
+    font-weight: 400;
 }
 
 // button 2
@@ -90,6 +95,7 @@
     color: #FFFFFF;
     background-color: #33383D;
     cursor: pointer;
+    font-weight: 300;
 }
 
 // 1440

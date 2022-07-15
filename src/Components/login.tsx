@@ -1,3 +1,4 @@
+import '../styles/components/font.scss';
 import { useEffect, useState } from "react";
 import Button from "./Button/Button";
 import { ImgBackground } from "./img-background/img";
