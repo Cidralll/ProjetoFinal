@@ -6,7 +6,18 @@
     border: 1px solid white;
     border-radius: 30px;
     color: #E0E0E0;
-
     padding-left: 20px;
 }
 
+.imgUser-input {
+    background-image: url(../../../public/img/icon-user.png);
+    background-repeat: no-repeat;
+    background-position: right 2vh center;
+}
+
+.imgPassword-input {
+    background-image: url(../../../public/img/icon-password.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position: right 2vh center;
+}
