@@ -4,6 +4,7 @@ import axios from 'axios';
 
 export default function Temperature() {
 
+    // Consumindo API de clima 
     const [location, setLocation] = useState(false);
     const [weather = 0, setWeather]   = useState();
     const [temp = 0, setTemp] = useState();
@@ -31,12 +32,38 @@ export default function Temperature() {
         })
     },[])
 
+    // Buscando dados de SP
+    const [tempSP = 0, setTempSP] = useState();
+    const [citySP, setCitySP] =useState();
+    let getWeatherSaoPaulo = async (lat: any, long: any) => {
+        let res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${'0794218f101559448d955ce92201ba2e'}` , {
+            params: {
+                lat: lat,
+                lon: long,
+                applid: '0794218f101559448d955ce92201ba2e',
+                lang: 'pt',
+                units: 'metric'
+            }
+        })
+        setTempSP(res.data['main']['temp'])
+        setCitySP(res.data['name'])
+        console.log(`Cidade ${res.data['name']} temperatura ${res.data['main']['temp']}°`)
+    }
+
+    useEffect(() => {
+        let lat = -23.5489;
+        let long = -46.6388;
+        getWeatherSaoPaulo(lat, long);
+            
+        
+    },[])
+
 
     if (location === false) {
         return(
             <div className="div-temperature">
                 <div className="div-city">
-                    <p>São Paulo</p>
+                    <p>{citySP}</p>
                 </div>
     
                 <div className="div-img-temp">
@@ -47,7 +74,7 @@ export default function Temperature() {
                     >
                     </div>
                     <div className="div-temp">
-                        <p>{weather}</p>
+                        <p>{Math.trunc(tempSP)}°</p>
                     </div>
                 </div>
             </div>
