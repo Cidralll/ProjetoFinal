@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Button from "./Button/Button";
 import { ImgBackground } from "./img-background/img";
+import addImagePassword from "./img-input/add-imagePassword";
+import addImageUser from "./img-input/add-imageUSer";
 import { ImgPassword } from "./img-input/img-password";
 import { ImgUser } from "./img-input/img-user";
 import removeImageUser from "./img-input/remove-imageUser";
@@ -18,14 +20,20 @@ export default function Login() {
     let [userValue, setUserValue] = useState('');
     const handleInputUserValue = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUserValue(event.currentTarget.value);
+        //Remove img do lado de fora do input
         removeImageUser();
+        // Add img dentro do input
+        addImageUser()
     }
 
     // Recebe o valor do input de password
     let [passwordValue, setPasswordValue] = useState('');
     const handleInputPasswordValue = (event: React.ChangeEvent<HTMLInputElement>) => {
         setPasswordValue(event.currentTarget.value);
+        // Remove img do lado de fora do input
         removeImagePassword();
+        // Adiciona img dentro do input
+        addImagePassword()
     }
 
     // Recebe o estado do span de erro
