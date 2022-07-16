@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Components-Home/home';
 import Login from './Components/login';
+import Register from './register/register';
 
 export default function AppRouter() {
     return (
@@ -8,6 +9,7 @@ export default function AppRouter() {
             <Routes>
                 <Route path='/' element={<Login />} />
                 <Route path='/home' element={<Home />} />
+                <Route path='/registro' element={<Register />} />
             </Routes>
         </Router>
     )
