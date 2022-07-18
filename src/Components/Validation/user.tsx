@@ -1,19 +1,13 @@
 export default function ValidationUser(user: string) {
     
     let res = Validation(user);
-
     return res;
+   
 }
 
-function Validation(user: string) {
+function Validation(user: string) { 
 
-    if(user.length > 0) {
-
-    }
-
-    if(user.length < 4) {
-        return false;
-    }else {
-        return true;
-    }
+    var re =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    return re.test(user);
+      
 }
