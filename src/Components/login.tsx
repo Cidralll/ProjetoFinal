@@ -14,7 +14,6 @@ import { ImgLogoCompass } from "./Logo-Compass/Logo-Compass";
 import ValidationPassword from "./Validation/password";
 import './Validation/span.scss'
 import ValidationUser from "./Validation/user";
-import SpanRegister from './span-register/span-register';
 import SpanRegisterLogin from './span-register/span-register';
 
 
@@ -64,6 +63,8 @@ export default function Login() {
 
         // se estiver tudo certo passa para pagina home
         if (validationPassword && validationUser) {
+            // Verifica se o usuario e a senha exitem / estão corretos
+            // function GET
             window.location.href = 'http://localhost:3000/home';
         }
 
