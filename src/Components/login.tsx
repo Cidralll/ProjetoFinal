@@ -14,6 +14,8 @@ import { ImgLogoCompass } from "./Logo-Compass/Logo-Compass";
 import ValidationPassword from "./Validation/password";
 import './Validation/span.scss'
 import ValidationUser from "./Validation/user";
+import SpanRegister from './span-register/span-register';
+import SpanRegisterLogin from './span-register/span-register';
 
 
 export default function Login() {
@@ -114,6 +116,9 @@ export default function Login() {
                     </div>
                     <div className="divMsgError">
                         <span className="MsgError" >{spanError}</span>
+                    </div>
+                    <div>
+                        <SpanRegisterLogin />
                     </div>
                     <Button type='submit' >
                         Continuar  
