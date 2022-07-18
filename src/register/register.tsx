@@ -15,6 +15,9 @@ import ValidationPassword from "./Validation/password";
 import './Validation/span.scss'
 import ValidationUser from "./Validation/user";
 import CreateUser from './CreateUser/createUser';
+import SpanRegister from './span-register/span-register';
+import CheckPassword from './check-password/check-password';
+import ValidationRadio from './Validation/radio';
 
 
 export default function Register() {
@@ -26,6 +29,7 @@ export default function Register() {
         removeImageUser();
         // Add img dentro do input
         addImageUser()
+       
     }
 
     // Recebe o valor do input de password
@@ -36,6 +40,8 @@ export default function Register() {
         removeImagePassword();
         // Adiciona img dentro do input
         addImagePassword()
+         // Marca / desmarca radio
+         ValidationRadio(event.currentTarget.value);
     }
 
     // Recebe o estado do span de erro
@@ -114,8 +120,14 @@ export default function Register() {
                     <ImgPassword />
                     
                     </div>
+                    <div>
+                        <CheckPassword />
+                    </div>
                     <div className="divMsgError">
                         <span className="MsgError" >{spanError}</span>
+                    </div>
+                    <div>
+                        <SpanRegister />
                     </div>
                     <Button type='submit' >
                         Cadastrar 

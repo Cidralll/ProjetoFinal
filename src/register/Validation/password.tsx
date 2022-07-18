@@ -1,5 +1,4 @@
 export default function ValidationPassword(password: string) {
-    
     let res = Validation(password);
     return res;
 }
@@ -13,13 +12,11 @@ function Validation(password: string) {
     // verifica se tem letras minusculas
     if(/[a-z]/gm.test(password)) {
         smallLetters = true;
-        console.log('Minusculas')
     }
 
     // verifica se tem letra maiusculas
     if (/[A-Z]/gm.test(password)) {
         capitalLetters = true;
-        console.log('Maiusculas')
     }
 
     // verifica se tem numeros
