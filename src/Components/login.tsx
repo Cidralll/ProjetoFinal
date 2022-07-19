@@ -21,13 +21,13 @@ import RemoveToken from '../token/removeToken';
 
 
 export default function Login() {
+    const history = useNavigate()
 
     // Remove o token caso o usuario volte para login
     useEffect(() => {
         RemoveToken();
     }, [])
 
-    const history = useNavigate()
     //Recebe valor do input do usuario
     let [userValue, setUserValue] = useState('');
     const handleInputUserValue = (event: React.ChangeEvent<HTMLInputElement>) => {
