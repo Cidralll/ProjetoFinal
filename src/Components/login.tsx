@@ -80,6 +80,7 @@ export default function Login() {
                 setErrorUser(true);
             }else if (isAuth) {
                 setErrorUser(false);
+                // Redireciona para home 
                 history('/home');
             }
         }

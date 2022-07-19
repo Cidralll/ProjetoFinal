@@ -22,7 +22,6 @@ function Validation(password: string) {
     // verifica se tem numeros
     if (/[0-9]/gm.test(password)) {
         number = true;
-        console.log('Numeros')
     }
 
     if (!smallLetters || !capitalLetters || !number) {
