@@ -1,23 +1,36 @@
 import { useEffect, useState } from 'react';
 import RemoveToken from '../../token/removeToken';
 import './footer.scss';
-
-interface Props {
-    stopwatch: number | undefined;
-}
+import {useNavigate} from 'react-router';
 
 export default function FooterHome() {
-    let [stopwatch, setStopwatch] = useState(60);
+
+    // Define tempo inicial para o cronometro
+    let newTime = 60;
+    // Verifica no local storege se o usuario esta recarregando a pagina, e se ele estiver ele define o tempo para o antigo
+    let timeLocalStorege = localStorage.getItem('time');
+    if (timeLocalStorege) {
+        let oldtime = timeLocalStorege;
+        newTime = (parseInt(oldtime) - 1)   
+    }
+
+    const history = useNavigate()
+    let time = newTime;
+    let [stopwatch, setStopwatch] = useState(time);
 
     function Stopwatch(stopwatch: number) {
         setTimeout(() => {
             if (stopwatch > 0) {
-                stopwatch = stopwatch;
+                // Salva no local storege o quanto tempo resta da sessão atual
+                let stopwatchString = stopwatch.toString();
+                localStorage.setItem('time', stopwatchString)
+                // Retorna o valor no tempo - 1
                 return setStopwatch(stopwatch - 1) 
             }else {
                 // Vai remover o token no final dos 60 segundos
                 RemoveToken();
-                return window.location.href = "http://localhost:3000/"
+                // Redireciona para home 
+                return history('/');
             }
         }, 1000)
     }
