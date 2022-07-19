@@ -1,12 +1,11 @@
 import './temperature.scss'
-import React, { Fragment, useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 
 export default function Temperature() {
 
     // Consumindo API de clima 
     const [location, setLocation] = useState(false);
-    const [weather = 0, setWeather]   = useState();
     const [temp = 0, setTemp] = useState();
     const [city, setCity] =useState();
 
@@ -20,7 +19,6 @@ export default function Temperature() {
                 units: 'metric'
             }
         })
-        setWeather(res.data);
         setTemp(res.data['main']['temp'])
         setCity(res.data['name'])
     }
