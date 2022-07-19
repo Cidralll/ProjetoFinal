@@ -47,7 +47,6 @@ export default function Temperature() {
         })
         setTempSP(res.data['main']['temp'])
         setCitySP(res.data['name'])
-        console.log(`Cidade ${res.data['name']} temperatura ${res.data['main']['temp']}°`)
     }
 
     useEffect(() => {

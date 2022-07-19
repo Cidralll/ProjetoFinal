@@ -15,9 +15,19 @@ import ValidationPassword from "./Validation/password";
 import './Validation/span.scss'
 import ValidationUser from "./Validation/user";
 import SpanRegisterLogin from './span-register/span-register';
+import LoginUser from './Login-API/loginAPI';
+import {useNavigate} from 'react-router';
+import RemoveToken from '../token/removeToken';
 
 
 export default function Login() {
+
+    // Remove o token caso o usuario volte para login
+    useEffect(() => {
+        RemoveToken();
+    }, [])
+
+    const history = useNavigate()
     //Recebe valor do input do usuario
     let [userValue, setUserValue] = useState('');
     const handleInputUserValue = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -42,7 +52,7 @@ export default function Login() {
     let [errorUser, setErrorUser] = useState(false);
     let [errorPassword, setErrorPassword] = useState(false);
     // função anonima para chamar funções que validam os campos usuario e de senha
-    const valueInputs = (event: React.FormEvent) => {
+    const valueInputs = async (event: React.FormEvent) => {
         event.preventDefault();
 
         // valida senha
@@ -64,10 +74,16 @@ export default function Login() {
         // se estiver tudo certo passa para pagina home
         if (validationPassword && validationUser) {
             // Verifica se o usuario e a senha exitem / estão corretos
-            // function GET
-            window.location.href = 'http://localhost:3000/home';
+            let isAuth = await LoginUser(userValue, passwordValue);
+            // Se usuario ou senha estiverem errados ou usuario não for cadastrado vai rerornar erro
+            if (!isAuth) {
+                setErrorUser(true);
+            }else if (isAuth) {
+                setErrorUser(false);
+                // Redireciona para home 
+                history('/home');
+            }
         }
-
     }
     // Valida se existe erro em span
     let [spanError, setSpanError] = useState('');

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import RemoveToken from '../../token/removeToken';
 import './footer.scss';
 
 interface Props {
@@ -14,6 +15,8 @@ export default function FooterHome() {
                 stopwatch = stopwatch;
                 return setStopwatch(stopwatch - 1) 
             }else {
+                // Vai remover o token no final dos 60 segundos
+                RemoveToken();
                 return window.location.href = "http://localhost:3000/"
             }
         }, 1000)
