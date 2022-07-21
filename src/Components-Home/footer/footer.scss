@@ -1,6 +1,6 @@
 .footerHome {
     display: flex;
-    height: 12.9vh;
+    height: 12.2vh;
     background-color: #33383D ;
 }
 //espaço entre elementos
@@ -74,7 +74,7 @@
 }
 .div-button1 button {
     width: 15.5vh;
-    height: 12.9vh;
+    height: 12vh;
     border: none;
     color: #C13216;
     font-size: 1.5vh;
@@ -89,7 +89,7 @@
 }
 .div-button2 button {
     width: 16.5vh;
-    height: 12.9vh;
+    height: 12vh;
     border: none;
     font-size: 1.5vh;
     color: #FFFFFF;
@@ -109,9 +109,15 @@
         width: 85vh;
 
         .text {
-            margin-left: 15vh;
+            margin-left: 10vh;
             margin-top: 2vh;
+            font-size: 2VH;
         }
+    }
+
+    // refresh
+    .div-refresh{
+        width: 12vh;
     }
 
     // button 1
@@ -123,6 +129,7 @@
     .div-button1 button {
         width: 15.5vh;
         height: 11.9vh;
+        font-size: 1.9vh;
     }
 
     // button 2
@@ -130,32 +137,36 @@
         width: 18vh;
     }
     .div-button2 button {
-        height: 11.9vh;
-        height: 12.9vh;
+        height: 11.5vh;
+        font-size: 1.9vh;
     }
 }
 
 // 1024
 @media(max-width: 1024px) {
     .footerHome {
-        height: 11.9vh;
+        height: 11.7vh;
     }
 
     .space1 {
-        width: 1vh;
+        width: 0vh;
     }
     // primeiro texto
     .text-inf {
-        width: 85vh;
+        width: 300vh;
 
         .text {
-            margin-left: 5vh;
-            margin-top: 2vh;
+            margin-left: 1vh;
         }
     }
 
+    // refresh
+    .div-refresh{
+        margin-left: 0vh;
+    }
+
     .space2 {
-        width: 10vh;
+        width: 0vh;
     }
 
     // button 1
@@ -166,7 +177,7 @@
     }
     .div-button1 button {
         width: 15.5vh;
-        height: 11.9vh;
+        height: 11.7vh;
     }
 
     // button 2
@@ -174,7 +185,55 @@
         width: 18vh;
     }
     .div-button2 button {
-        height: 11.9vh;
-        height: 12.9vh;
+        height: 11.7vh;
+    }
+}
+
+// 768
+@media(max-width: 768px) {
+    .footerHome {
+        height: 11.7vh;
+    }
+
+    .space1 {
+        width: 0vh;
+    }
+    // primeiro texto
+    .text-inf {
+        width: 300vh;
+
+        .text {
+            margin-left: 1vh;
+            margin-top: 0.5vh;
+            font-size: 1.8vh;
+        }
+    }
+
+    // refresh
+    .div-refresh{
+        margin-left: 0vh;
+    }
+
+    .space2 {
+        width: 0vh;
+    }
+
+    // button 1
+    .div-button1 {
+        margin-left: 10vh;
+        width: 15.5vh;
+        
+    }
+    .div-button1 button {
+        width: 15.5vh;
+        height: 11.7vh;
+    }
+
+    // button 2
+    .div-button2 {
+        width: 18vh;
+    }
+    .div-button2 button {
+        height: 11.7vh;
     }
 }

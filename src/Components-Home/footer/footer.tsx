@@ -6,7 +6,7 @@ import {useNavigate} from 'react-router';
 export default function FooterHome() {
 
     // Define tempo inicial para o cronometro
-    let newTime = 60;
+    let newTime = 600;
     // Verifica no local storege se o usuario esta recarregando a pagina, e se ele estiver ele define o tempo para o antigo
     let timeLocalStorege = localStorage.getItem('time');
     if (timeLocalStorege) {

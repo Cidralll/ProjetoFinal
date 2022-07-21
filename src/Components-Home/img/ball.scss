@@ -2,20 +2,29 @@
     width: 61.1vh;
     height: 66vh;
     margin-left: -3%;
+    background-repeat: no-repeat;
 }
 
 @media(max-width: 1440px) {
     .img-ball {
-        width: 64.4vh;
-        height: 66vh;
+        width: 79vh;
+        height: 64.5vh;
         margin-left: -8%;
     } 
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1324px) {
     .img-ball {
-        width: 66.2vh;
+        width: 90vh;
         height: 66vh;
-        margin-left: -32%;
+        margin-left: -28%;
+    } 
+}
+
+@media(max-width: 768px) {
+    .img-ball {
+        width: 90vh;
+        height: 66vh;
+        margin-left: -45%;
     } 
 }
