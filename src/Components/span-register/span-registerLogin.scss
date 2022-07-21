@@ -14,3 +14,10 @@
     margin-left: 1vh;
     cursor: pointer;
 }
+
+
+@media(max-width: 768px) {
+    .section-registerLogin {
+        margin-left: 32vh;
+    }
+}
