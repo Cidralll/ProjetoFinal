@@ -14,3 +14,43 @@
     margin-left: 1vh;
     cursor: pointer;
 }
+
+@media(max-width: 1024px) {
+    .section-register {
+        margin-left: 18vh;
+    }
+}
+
+@media(max-width: 768px) {
+    .section-register {
+        margin-left: 32vh;
+    }
+}
+
+@media(max-width: 638px) {
+    .section-register {
+        margin-left: 9vh;
+    }
+
+    .text-register1 {
+        margin-top: 1.1rem;
+        font-size: 0.9rem;
+    }
+    .text-register2 {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 346px) {
+    .section-register {
+        margin-left: 5vh;
+    }
+
+    .text-register1 {
+        margin-top: 1.1rem;
+        font-size: 0.9rem;
+    }
+    .text-register2 {
+        font-size: 0.9rem;
+    }
+}

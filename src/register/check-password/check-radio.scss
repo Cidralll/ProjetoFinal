@@ -9,3 +9,39 @@
     margin-block-end: 1vh;
     margin-top: 1vh;
 }
+
+@media(max-width: 1024px) {
+    .section-radio {
+        margin-left: 7vh;
+    }
+}
+
+@media(max-width: 768px) {
+    .section-radio {
+        margin-left: 22vh;
+    }
+}
+
+@media(max-width: 638px) {
+    .section-radio {
+        margin-left: 1vh;
+        margin-right: 4vh;
+        text-align: right;
+    }
+    
+    .div-radio1 {
+        margin-left: 0vh;
+    }
+}
+
+@media(max-width: 346px) {
+    .section-radio {
+        margin-left: 6vh;
+        margin-right: 10vh;
+        text-align: center;
+    }
+    
+    .div-radio1 {
+        margin-left: 0vh;
+    }
+}

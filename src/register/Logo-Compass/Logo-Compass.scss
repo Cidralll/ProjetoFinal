@@ -2,3 +2,9 @@
     width: 19.125rem;
     height: 4.313rem;
 }
+@media (max-width: 320px) {
+    .img-logoCompass {
+        background-size: cover;
+        margin-left: 2%;
+    }
+}

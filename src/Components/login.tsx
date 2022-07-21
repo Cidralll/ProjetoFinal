@@ -1,4 +1,5 @@
 import '../styles/components/font.scss';
+import '../styles/components/body-home.scss';
 import { useEffect, useState } from "react";
 import Button from "./Button/Button";
 import { ImgBackground } from "./img-background/img";
@@ -137,9 +138,11 @@ export default function Login() {
                     <div>
                         <SpanRegisterLogin />
                     </div>
-                    <Button type='submit' >
-                        Continuar  
-                    </Button> 
+                    <div className='div-button'>
+                        <Button type='submit' >
+                            Continuar  
+                        </Button> 
+                    </div>
                 </form>
             </section>
 

@@ -8,4 +8,12 @@
     color: white;
     cursor: pointer;
     font-weight: 500;
+    box-shadow: 0.2em 3px 2px rgb(31, 30, 30);
 }
+
+@media(max-width: 638px) {
+    .Button {
+        margin-left: 8%;
+        width: 80%;
+    }
+ }
