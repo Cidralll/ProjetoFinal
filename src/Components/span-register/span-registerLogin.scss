@@ -15,9 +15,42 @@
     cursor: pointer;
 }
 
+@media(max-width: 1024px) {
+    .section-registerLogin {
+        margin-left: 14vh;
+    }
+}
 
 @media(max-width: 768px) {
     .section-registerLogin {
         margin-left: 32vh;
+    }
+}
+
+@media(max-width: 638px) {
+    .section-registerLogin {
+        margin-left: 6vh;
+    }
+
+    .text-register1Login {
+        margin-top: 1.1rem;
+        font-size: 0.9rem;
+    }
+    .text-register2Login {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 346px) {
+    .section-registerLogin {
+        margin-left: 4vh;
+    }
+
+    .text-register1Login {
+        margin-top: 1.1rem;
+        font-size: 0.9rem;
+    }
+    .text-register2Login {
+        font-size: 0.9rem;
     }
 }

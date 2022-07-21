@@ -27,7 +27,7 @@ h1 {
     margin-left: 25%;
     width: 17.813rem;
     font-size: 1rem;
-    margin-top: 1%;
+    margin-top: 2%;
     font-weight: 300;
 }
 
@@ -84,9 +84,10 @@ h1 {
 
 // Part 2 da tela
 .img-background {
-    width: 99vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: relative;
+    background-size: cover;
 
     
 }
@@ -118,74 +119,44 @@ h1 {
     }
 
     .img-background {
-        width: 99vh;
+        width: 100%;
         height: 101.7vh;
         position: relative;
+        background-size: cover;
+        background-position: center;
     }
     
 }
 //PARA NOT 1024PX
 @media(max-width: 1024px) {
-
-    .body-main {
-        display: flex;
-        background-color: #33383D;
-        height: 100vh;
-    
-        .section-inputs{
-            width: 50%;
-        }
-        .section-img {
-            width: 50%;
-        }
-    }
     
     //Part 1 da tela
     h1 {
-        color: #E0E0E0;
-        font-size: 3.753rem;
-        font-weight: 400;
-        margin-left: 25%;
+        margin-left: 15%;
         margin-top: 20%;
-        margin-block-end: 0;
-        font-weight: 400;
     }
     
     .sub-title {
-        color: #E0E0E0;
-        margin-left: 25%;
-        width: 17.813rem;
-        font-size: 1rem;
+        margin-left: 15%;
         margin-top: 1%;
-        font-weight: 300;
     }
     
     .login {
-        color: #E0E0E0;
-        margin-left: 25%;
+        margin-left: 15%;
         margin-top: 10%;
-        width: 18.813rem;
-        font-size: 2rem;
-        margin-block-end: 0;
-       font-weight: 300;
     }
     
     .input-login {
-        margin-left: 25%;
+        margin-left: 15%;
         margin-top: 4%;
     }
-    .input-login::placeholder {
-        color: #E0E0E0;
-       
-    }
-    
-    
+   
     .div-user {
-        display: flex;
     
         .img-user {
-            margin-top: 3.6rem;
-            margin-left: 1rem;
+            margin-top: 2.6rem;
+            margin-left: 0.5rem;
+            margin-right: 1rem;
         }
     }
     
@@ -193,8 +164,9 @@ h1 {
         display: flex;
     
         .img-password {
-            margin-top: 3.5rem;
-            margin-left: 1rem;
+            margin-top: 2.5rem;
+            margin-left: 0.5rem;
+            margin-right: 1rem;
         }
     }
     
@@ -207,8 +179,7 @@ h1 {
     
     
     .Button {
-        margin-left: 25%;
-        margin-top: 3%;
+        margin-left: 15%;
     }
     
     // Part 2 da tela
@@ -216,13 +187,14 @@ h1 {
         width: 100%;
         height: 100%;
         position: relative;
+        background-size: cover;
+        background-position: center;
     
         
     }
     .img-logoCompass {
-        position: absolute;
         top: 4%;
-        margin-left: 17%;
+        margin-left: 12%;
     }
 }
 
@@ -300,3 +272,177 @@ h1 {
         margin-left: 30%;
     }
 }
+
+// ----------------------------------------------------------
+@media(max-width: 638px) {
+
+    .body-main {
+        display:grid;
+        .section-img {
+            width: 0%;
+        }
+    }
+    
+    //Part 1 da tela
+    h1 {
+        width: 60%;
+        margin-left: 15%;
+        margin-top: 35%;
+    }
+    
+    .sub-title {
+        margin-left: 15%;
+        width: 60%;
+    }
+    
+    .login {
+        margin-left: 15%;
+        margin-top: 10%;
+        width: 60%;
+    }
+
+    // Responsavel pelos 2 inputs
+    .input-login {
+        margin-left: 7%;
+        margin-top: 4%;
+    }
+    
+    // Input user
+    .div-user {
+        display: flex;
+        width: 100%;
+
+        .input-login {
+            width: 70%;
+        }
+    
+        .img-user {
+            margin-top: 2.2rem;
+            margin-left: 1rem;
+        }
+    }
+    
+    // Input password
+    .div-password {
+        display: flex;
+        width: 100%;
+
+        .input-login {
+            width: 70%;
+        }
+    
+        .img-password {
+            margin-top: 2.2rem;
+            margin-left: 1rem;
+        }
+    }
+    
+    .divMsgError {
+        margin-left: 18%;
+    }
+    
+    .div-button {
+        width: 100%;
+    }
+    .Button {
+        margin-left: 2%;
+        margin-top: 3%;
+    }
+    
+    // Part 2 da tela
+    .img-background {
+        width: 0vh;
+        height: 0vh;
+    }
+    .img-logoCompass {
+        position: absolute;
+        top: 2%;
+        margin-left: 10%;
+    }
+}
+
+@media(max-width: 320px) {
+    .body-main {
+        display:grid;
+        .section-img {
+            width: 0%;
+        }
+    }
+    
+    //Part 1 da tela
+    h1 {
+        width: 60%;
+        margin-left: 15%;
+        margin-top: 35%;
+    }
+    
+    .sub-title {
+        margin-left: 15%;
+        width: 60%;
+    }
+    
+    .login {
+        margin-left: 15%;
+        margin-top: 10%;
+        width: 60%;
+    }
+
+    // Responsavel pelos 2 inputs
+    .input-login {
+        margin-left: 7%;
+        margin-top: 4%;
+    }
+    
+    // Input user
+    .div-user {
+        display: flex;
+        width: 100%;
+
+        .input-login {
+            width: 70%;
+        }
+    
+        .img-user {
+            margin-top: 2.2rem;
+            margin-left: 1rem;
+        }
+    }
+    
+    // Input password
+    .div-password {
+        display: flex;
+        width: 100%;
+
+        .input-login {
+            width: 70%;
+        }
+    
+        .img-password {
+            margin-top: 2.2rem;
+            margin-left: 1rem;
+        }
+    }
+    
+    .divMsgError {
+        margin-left: 10%;
+    }
+    
+    .div-button {
+        width: 100%;
+    }
+    .Button {
+        margin-left: 2%;
+        margin-top: 3%;
+    }
+    
+    // Part 2 da tela
+    .img-background {
+        width: 0vh;
+        height: 0vh;
+    }
+    .img-logoCompass {
+        position: absolute;
+        top: 2%;
+        margin-left: 10%;
+    }
+}    

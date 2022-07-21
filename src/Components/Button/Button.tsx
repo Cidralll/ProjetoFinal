@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.scss"; 
+import '../../styles/components/body-home.scss';
 
 interface Props {
     type?: "button" | "submit" | "reset" | undefined,
