@@ -28,7 +28,7 @@
     .main-home {
     
         .div-text {
-            margin-left: 18%;
+            margin-left: 5%;
         }
     }
 
@@ -47,7 +47,8 @@
     .main-home {
     
         .div-text {
-            margin-left: -5%;
+            margin-left: -10%;
+            margin-right: 10%;
         }
     }
 
@@ -57,6 +58,26 @@
 
     .div-temperature {
         margin-left: 20%;
+    }
+
+    //mudar em ball e footer
+}
+
+@media(max-width: 768px) {
+    .main-home {
+    
+        .div-text {
+            margin-left: -10%;
+            margin-right: 10%;
+        }
+    }
+
+    .div-time {
+        margin-left: 10%;
+    }
+
+    .div-temperature {
+        margin-left: 13%;
     }
 
     //mudar em ball e footer
