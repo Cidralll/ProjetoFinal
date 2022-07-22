@@ -5,9 +5,15 @@
 }
 
 .div-radio1 {
-    margin-left: 5vh;
+    margin-left: 12vh;
     margin-block-end: 1vh;
     margin-top: 1vh;
+}
+
+@media(max-width: 1440px) {
+    .section-radio {
+        margin-left: 20vh;
+    }
 }
 
 @media(max-width: 1024px) {
@@ -24,9 +30,7 @@
 
 @media(max-width: 638px) {
     .section-radio {
-        margin-left: 1vh;
-        margin-right: 4vh;
-        text-align: right;
+        margin-left: 13vh;
     }
     
     .div-radio1 {
@@ -34,11 +38,19 @@
     }
 }
 
-@media(max-width: 346px) {
+@media(max-width: 375px) {
     .section-radio {
-        margin-left: 6vh;
-        margin-right: 10vh;
-        text-align: center;
+        margin-left: 10vh;
+    }
+    
+    .div-radio1 {
+        margin-left: 0vh;
+    }
+}
+
+@media(max-width: 320px) {
+    .section-radio {
+        margin-left: 7vh;
     }
     
     .div-radio1 {

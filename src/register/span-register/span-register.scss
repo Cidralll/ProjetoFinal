@@ -1,6 +1,7 @@
 .section-register {
     display: flex;
-    margin-left: 32vh;
+    margin-left: 33vh;
+    margin-top: 1%;
 }
 
 .text-register1 {
@@ -13,6 +14,12 @@
     text-decoration:underline;
     margin-left: 1vh;
     cursor: pointer;
+}
+
+@media(max-width: 1440px) {
+    .section-register {
+        margin-left: 30vh;
+    }
 }
 
 @media(max-width: 1024px) {
@@ -29,6 +36,20 @@
 
 @media(max-width: 638px) {
     .section-register {
+        margin-left: 11vh;
+    }
+
+    .text-register1 {
+        margin-top: 1.1rem;
+        font-size: 0.9rem;
+    }
+    .text-register2 {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 375px) {
+    .section-register {
         margin-left: 9vh;
     }
 
@@ -43,7 +64,7 @@
 
 @media(max-width: 346px) {
     .section-register {
-        margin-left: 5vh;
+        margin-left: 5.5vh;
     }
 
     .text-register1 {

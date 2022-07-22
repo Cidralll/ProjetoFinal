@@ -124,24 +124,27 @@ export default function Login() {
                 <p className='login'>Login</p>
                 <form onSubmit={valueInputs}>
                     <div className='div-user'>
-                    <Inputs onChange={handleInputUserValue} value={userValue}></Inputs>
-                    <ImgUser />
+                        <Inputs onChange={handleInputUserValue} value={userValue}></Inputs>
+                        <ImgUser />
                     </div>
                     <div className='div-password'>
-                    <InputPassword onChange={handleInputPasswordValue} value={passwordValue} />
-                    <ImgPassword />
+                        <InputPassword onChange={handleInputPasswordValue} value={passwordValue} />
+                        <ImgPassword />
                     
                     </div>
                     <div className="divMsgError">
                         <span className="MsgError" >{spanError}</span>
                     </div>
-                    <div>
-                        <SpanRegisterLogin />
+                    <div className='space'>
+                        <p></p>
                     </div>
                     <div className='div-button'>
                         <Button type='submit' >
                             Continuar  
                         </Button> 
+                    </div>
+                    <div>
+                        <SpanRegisterLogin />
                     </div>
                 </form>
             </section>

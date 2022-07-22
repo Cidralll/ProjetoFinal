@@ -1,5 +1,5 @@
 .Button {
-    width: 23.688rem;
+    width: 25rem;
     height: 4.05rem;
     border-radius: 30px;
     border: none;
@@ -11,9 +11,23 @@
     box-shadow: 0.2em 3px 2px rgb(31, 30, 30);
 }
 
+@media(max-width: 1024px) {
+    .Button {
+        margin-left: 15%;
+        width: 76%;
+    }
+ }
+
+ @media(max-width: 768px) {
+    .Button {
+        margin-left: 25%;
+        width: 52.5%;
+    }
+ }
+
 @media(max-width: 638px) {
     .Button {
-        margin-left: 8%;
-        width: 80%;
+        margin-left: 10%;
+        width: 75%;
     }
  }
