@@ -25,17 +25,34 @@
 
 @media(max-width: 767px) {
     .div-time h1 {
-        font-size: 6rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-left: 10%;
     }
     .div-time p {
-        margin-top: -4%;
-        margin-left: -18%;
+        margin-top: -2%;
+        text-align: left;
+        margin-left: -7%;
+    }
+}
+
+@media(max-width: 424px) {
+    .div-time p {
+        width: 30vh;
+    }
+    
+    .div-time {
+        width: 30vh;
     }
 }
 
 @media(max-width: 374px) {
+    .div-time h1 {
+        font-size: 2rem;
+    }
     .div-time p {
-        margin-top: -4%;
+        margin-top: -2%;
         margin-left: -14%;
+        font-size: 1rem;
     }
 }
