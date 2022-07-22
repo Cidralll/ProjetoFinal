@@ -14,7 +14,7 @@ export default async function CreateUser(email: String, password: String) {
         console.log('Error')
     }else if(statusCode === 201){
         window.location.href = "http://localhost:3000/";
-        return alert('Created task')
+        return alert('Created user')
     }
 }
 
