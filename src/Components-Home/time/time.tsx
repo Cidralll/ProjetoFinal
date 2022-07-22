@@ -43,7 +43,11 @@ export default function Time() {
     // função para passar novo horario
     function Time(hour: number, minutes: number) {
         if (hour > 0 && hour < 24 && minutes > 60) {
-            return setCurrentTime(`${hour + 1}:${minutes}`)
+            if (hour < 10) {
+                return setCurrentTime(`0${hour + 1}:${minutes}`)    
+            }else {
+                return setCurrentTime(`${hour + 1}:${minutes}`)
+            }
         } else if (hour > 23) {
             return setCurrentTime(`${hour = 0}:${minutes}`)
         }
@@ -75,7 +79,7 @@ export default function Time() {
 
     return (
         <div className="div-time">
-            <h1>{`0${currentTime}`}</h1>
+            <h1>{currentTime}</h1>
             <p>{dateView}</p>
         </div>
     )
