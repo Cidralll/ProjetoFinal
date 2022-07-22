@@ -126,12 +126,12 @@ export default function Register() {
                     <div className="divMsgError">
                         <span className="MsgError" >{spanError}</span>
                     </div>
-                    <div>
-                        <SpanRegister />
-                    </div>
                     <Button type='submit' >
                         Cadastrar 
                     </Button> 
+                    <div>
+                        <SpanRegister />
+                    </div>
 
                 </form>
             </section>

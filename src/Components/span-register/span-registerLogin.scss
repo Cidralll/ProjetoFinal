@@ -1,6 +1,7 @@
 .section-registerLogin {
     display: flex;
     margin-left: 30vh;
+    margin-top: 2%;
 }
 
 .text-register1Login {
@@ -15,6 +16,12 @@
     cursor: pointer;
 }
 
+@media(max-width: 1440px) {
+    .section-registerLogin {
+        margin-left: 26vh;
+    }
+}
+
 @media(max-width: 1024px) {
     .section-registerLogin {
         margin-left: 14vh;
@@ -23,13 +30,27 @@
 
 @media(max-width: 768px) {
     .section-registerLogin {
-        margin-left: 32vh;
+        margin-left: 28vh;
     }
 }
 
 @media(max-width: 638px) {
     .section-registerLogin {
-        margin-left: 6vh;
+        margin-left: 8vh;
+    }
+
+    .text-register1Login {
+        margin-top: 1.1rem;
+        font-size: 0.9rem;
+    }
+    .text-register2Login {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 375px) {
+    .section-registerLogin {
+        margin-left: 5vh;
     }
 
     .text-register1Login {
@@ -43,7 +64,7 @@
 
 @media(max-width: 346px) {
     .section-registerLogin {
-        margin-left: 4vh;
+        margin-left: 2vh;
     }
 
     .text-register1Login {
