@@ -18,6 +18,10 @@ import CreateUser from './CreateUser/createUser';
 import SpanRegister from './span-register/span-register';
 import CheckPassword from './check-password/check-password';
 import ValidationRadio from './Validation/radio';
+import addImagePasswordOutside from './img-input/add-imgPasswordOutside';
+import removeImageInside from './img-input/removeImgPasswordInside';
+import addImageUserOutside from './img-input/add-imgUserOutside';
+import removeImageUserInside from './img-input/remove-imgUserInside';
 
 
 export default function Register() {
@@ -25,10 +29,19 @@ export default function Register() {
     let [userValue, setUserValue] = useState('');
     const handleInputUserValue = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUserValue(event.currentTarget.value);
-        //Remove img do lado de fora do input
-        removeImageUser();
-        // Add img dentro do input
-        addImageUser()
+        // Verifica se input está preenchido ou não
+        let userImgValidation = event.currentTarget.value;
+        if (userImgValidation.length === 0) {
+            // Add img fora do input
+            addImageUserOutside()
+            //Remove img de dentro do input
+            removeImageUserInside();
+        } else if (userImgValidation.length > 0) {
+            // Add img dentro do input
+            addImageUser()
+            //Remove img do lado de fora do input
+            removeImageUser();
+        }
        
     }
 
@@ -36,10 +49,19 @@ export default function Register() {
     let [passwordValue, setPasswordValue] = useState('');
     const handleInputPasswordValue = (event: React.ChangeEvent<HTMLInputElement>) => {
         setPasswordValue(event.currentTarget.value);
-        // Remove img do lado de fora do input
-        removeImagePassword();
-        // Adiciona img dentro do input
-        addImagePassword()
+        // Verifica se input está preenchido ou não
+        let passwordImgValidation = event.currentTarget.value;
+        if (passwordImgValidation.length === 0) {
+            // Remove img dentro do input
+            removeImageInside();
+            // Adiciona img fora do input
+            addImagePasswordOutside()
+        }else if (passwordImgValidation.length > 0) {
+            // Remove img do lado de fora do input
+            removeImagePassword();
+            // Adiciona img dentro do input
+            addImagePassword()
+        }
          // Marca / desmarca radio
          ValidationRadio(event.currentTarget.value);
     }
