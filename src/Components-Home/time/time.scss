@@ -22,3 +22,20 @@
         font-size: 7.5rem;
     }
 }
+
+@media(max-width: 767px) {
+    .div-time h1 {
+        font-size: 6rem;
+    }
+    .div-time p {
+        margin-top: -4%;
+        margin-left: -35%;
+    }
+}
+
+@media(max-width: 374px) {
+    .div-time p {
+        margin-top: -4%;
+        margin-left: -32%;
+    }
+}

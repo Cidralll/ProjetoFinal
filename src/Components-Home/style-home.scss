@@ -12,7 +12,7 @@
 }
 
 .div-temperature {
-    margin-left: 33%;
+    margin-left: 37%;
 }
 
 // main
@@ -20,7 +20,7 @@
     display: flex;
 
     .div-text {
-        margin-left: 27%;
+        margin-left: 26%;
     }
 }
 
@@ -37,7 +37,7 @@
     }
 
     .div-temperature {
-        margin-left: 27%;
+        margin-left: 31.5%;
     }
 
     //mudar em ball e footer
@@ -57,7 +57,7 @@
     }
 
     .div-temperature {
-        margin-left: 20%;
+        margin-left: 26%;
     }
 
     //mudar em ball e footer
@@ -73,11 +73,73 @@
     }
 
     .div-time {
-        margin-left: 10%;
+        margin-left: 22%;
     }
 
     .div-temperature {
-        margin-left: 13%;
+        margin-left: 11%;
+    }
+
+    //mudar em ball e footer
+}
+
+@media(max-width: 767px) {
+    .header-home {
+        display:grid;
+        height: 13rem;
+    }
+    
+    .img-logo {
+        margin-top: 1%;
+        margin-left: 34%;
+    }
+    
+    .div-time {
+        margin-left: 35%;
+    }
+    
+    .div-temperature {
+        margin-left: -4%;
+    }
+    
+    // main
+    .main-home {
+        display: flex;
+    
+        .div-text {
+            margin-left: 5%;
+        }
+    }
+
+    //mudar em ball e footer
+}
+
+@media(max-width: 374px) {
+    .header-home {
+        display:grid;
+        height: 13rem;
+    }
+    
+    .img-logo {
+        margin-top: 1%;
+        margin-left: 28%;
+    }
+    
+    .div-time {
+        margin-left: 28%;
+    }
+    
+    .div-temperature {
+        margin-left: -10%;
+    }
+    
+    // main
+    .main-home {
+        display: flex;
+    
+        .div-text {
+            margin-left: 5%;
+        }
     }
 
     //mudar em ball e footer
