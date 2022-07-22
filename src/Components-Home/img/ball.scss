@@ -28,3 +28,11 @@
         margin-left: -45%;
     } 
 }
+
+@media(max-width: 767px) {
+    .img-ball {
+        width: 0vh;
+        height: 0vh;
+        margin-left: 0%;
+    } 
+}

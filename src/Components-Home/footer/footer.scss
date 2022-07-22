@@ -246,3 +246,255 @@
         height: 11.7vh;
     }
 }
+
+@media(max-width: 767px) {
+    .footerHome {
+        width: 100vw;
+        height: 26.5vh;
+        display:grid;
+    }
+
+    .space1 {
+        width: 0vh;
+    }
+    // primeiro texto
+    .text-inf {
+        width: 45vh;
+        text-align: left;
+        display: flex;
+        height: 7vh;
+
+        .text {
+            margin-left: 1vh;
+            margin-top: 0vh;
+            font-size: 1.8vh;
+        }
+    }
+
+    .div-space {
+      display: none;
+    }
+
+    // refresh
+    .div-refresh{
+        margin-left: 0vh;
+        width: 45%;
+        margin-top: 3vh;
+
+        .p-refresh {
+            margin-left: 2vh;
+            text-align: left;
+            margin-top: 0vh;
+        }
+    }
+
+    // TIME
+    .div-timeNumber {
+        margin-left: 5vh;
+        .div-number {
+            margin-top: -7vh;
+            margin-left: 4%;
+        }
+        .div-seconds {
+            margin-top: -5.2vh;
+            margin-left: 2.5%;
+        }
+    }
+
+    .space2 {
+        width: 0vh;
+    }
+
+    // button 1
+    .div-button1 {
+        margin-left: 26vh;
+        margin-top: -16vh;
+        width: 22.7vh;
+        height: 7vh;
+    }
+    .div-button1 button {
+        width: 100%;
+        height: 100%;
+    }
+
+    // button 2
+    .div-button2 {
+        width: 22.6vh;
+        height: 7vh;
+        margin-left: 26vh;
+        margin-top: -8vh;
+    }
+    .div-button2 button {
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+
+@media(max-width: 424px) {
+    .footerHome {
+        height: 26.5vh;
+        display:grid;
+    }
+
+    .space1 {
+        width: 0vh;
+    }
+    // primeiro texto
+    .text-inf {
+        width: 43vh;
+        text-align: left;
+        display: flex;
+        height: 7vh;
+
+        .text {
+            margin-left: 1vh;
+            margin-top: 0vh;
+            font-size: 1.8vh;
+            margin-right: 2vh;
+        }
+    }
+
+    .div-space {
+      display: none;
+    }
+
+    // refresh
+    .div-refresh{
+        margin-left: 0vh;
+        width: 45%;
+        margin-top: 3vh;
+
+        .p-refresh {
+            margin-left: 2vh;
+            text-align: left;
+            margin-top: 0vh;
+        }
+    }
+
+    // TIME
+    .div-timeNumber {
+        margin-left: 5vh;
+        .div-number {
+            margin-top: -7vh;
+            margin-left: 4%;
+        }
+        .div-seconds {
+            margin-top: -5.2vh;
+            margin-left: 2.5%;
+        }
+    }
+
+    .space2 {
+        width: 0vh;
+    }
+
+    // button 1
+    .div-button1 {
+        margin-left: 26vh;
+        margin-top: -16vh;
+        width: 39.5%;
+        height: 7vh;
+    }
+    .div-button1 button {
+        width: 100%;
+        height: 100%;
+    }
+
+    // button 2
+    .div-button2 {
+        width: 39.5%;
+        height: 7vh;
+        margin-left: 26vh;
+        margin-top: -8vh;
+    }
+    .div-button2 button {
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+
+@media(max-width: 374px) {
+    .footerHome {
+        height: 30.1vh;
+        display:grid;
+    }
+
+    .space1 {
+        width: 0vh;
+    }
+    // primeiro texto
+    .text-inf {
+        width: 36.5vh;
+        text-align: left;
+        display: flex;
+        height: 7vh;
+
+        .text {
+            margin-left: 1vh;
+            margin-top: 0vh;
+            font-size: 1.8vh;
+            margin-right: 2vh;
+        }
+    }
+
+    .div-space {
+      display: none;
+    }
+
+    // refresh
+    .div-refresh{
+        margin-left: 2.5vh;
+        width: 45%;
+        margin-top: 3vh;
+
+        .p-refresh {
+            margin-left: 2vh;
+            text-align: left;
+            margin-top: 0vh;
+        }
+    }
+
+    // TIME
+    .div-timeNumber {
+        margin-left: 5vh;
+        .div-number {
+            margin-top: -7vh;
+            margin-left: 4%;
+        }
+        .div-seconds {
+            margin-top: -5.2vh;
+            margin-left: 2.5%;
+        }
+    }
+
+    .space2 {
+        width: 0vh;
+    }
+
+    // button 1
+    .div-button1 {
+        margin-left: 22vh;
+        margin-top: -16vh;
+        width: 39.9%;
+        height: 7vh;
+    }
+    .div-button1 button {
+        width: 100%;
+        height: 100%;
+    }
+
+    // button 2
+    .div-button2 {
+        width: 24.9%;
+        width: 39.9%;
+        margin-left: 22vh;
+        margin-top: -8vh;
+    }
+    .div-button2 button {
+        width: 100%;
+        height: 100%;
+        
+    }
+}
