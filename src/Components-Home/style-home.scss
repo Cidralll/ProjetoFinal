@@ -95,11 +95,44 @@
     }
     
     .div-time {
-        margin-left: 20%;
+        margin-left: 8%;
+        margin-top: -12%;
     }
     
     .div-temperature {
-        margin-left: -4%;
+        margin-left: 20%;
+    }
+    
+    // main
+    .main-home {
+        display: flex;
+    
+        .div-text {
+            margin-left: 5%;
+        }
+    }
+
+    //mudar em ball e footer
+}
+
+@media(max-width: 767px) {
+    .header-home {
+        display:grid;
+        height: 13rem;
+    }
+    
+    .img-logo {
+        margin-top: 1%;
+        margin-left: 34%;
+    }
+    
+    .div-time {
+        margin-left: 8%;
+        margin-top: -12%;
+    }
+    
+    .div-temperature {
+        margin-left: 24%;
     }
     
     // main
@@ -120,17 +153,12 @@
         height: 13rem;
     }
     
-    .img-logo {
-        margin-top: 1%;
-        margin-left: 28%;
-    }
-    
     .div-time {
         margin-left: 13%;
     }
     
     .div-temperature {
-        margin-left: -10%;
+        margin-left: -55%;
     }
     
     // main

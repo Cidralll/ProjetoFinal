@@ -26,13 +26,15 @@
     .div-temperature {
         display: flex;
         height: 60%;
-        margin-top: -7%;
+        margin-top: -29%;
     }
     
     .div-city {
-        margin-top: -4%;
+        margin-top: 0%;
         margin-left: 29%;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        width: 40vh;
+        text-align: right;
     }
     
     .div-img-temp {
@@ -40,8 +42,8 @@
         
     }
     .img-cloudy {
-        margin-top: 7%;
-        margin-left: 4%;
+        margin-top: 15%;
+        margin-left: 10%;
         width: 2rem;
         height: 2.2rem;
     }
@@ -49,21 +51,48 @@
     .div-temp {
         font-size: 2.4rem;
         margin-left: 5%;
-        margin-top: -13%;
+        margin-top: -14%;
+        font-size: 2rem;
     } 
 }
 
+@media(max-width: 424px) {
+    .div-temperature {
+        display: flex;
+        height: 60%;
+        margin-top: -32%;
+    }
+    .div-img-temp {
+        width: 100%;
+        margin-left: -5%;
+        
+    }
+    .div-city {
+        margin-top: 0%;
+        margin-left: 24%;
+        font-size: 1.5rem;
+        width: 35vh;
+        margin-right: 2%;
+    }
+}
+
 @media(max-width: 374px) {
-    .img-cloudy {
-        margin-top: 12%;
-        margin-left: 4%;
-        width: 2rem;
-        height: 2.2rem;
+    .div-temperature {
+        margin-top: -40%;
+        display: flex;
+    }
+    .div-img-temp {
+        width: 0vh
+        
+    }
+
+    .div-city {
+        margin-right: 8%;
+        margin-top: 1%;
     }
     
     .div-temp {
-        font-size: 2.4rem;
+        font-size: 1.7rem;
         margin-left: 5%;
-        margin-top: -17%;
     } 
 }
