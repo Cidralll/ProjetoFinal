@@ -91,8 +91,7 @@ export default function Register() {
 
         // se estiver tudo certo passa para pagina home
         if (validationPassword && validationUser) {
-            CreateUser(userValue, passwordValue)
-           // window.location.href = 'http://localhost:3000/home';
+            CreateUser(userValue, passwordValue);
         }
 
     }
