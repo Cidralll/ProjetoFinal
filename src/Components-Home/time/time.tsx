@@ -75,7 +75,7 @@ export default function Time() {
 
     return (
         <div className="div-time">
-            <h1>{currentTime}</h1>
+            <h1>{`0${currentTime}`}</h1>
             <p>{dateView}</p>
         </div>
     )
