@@ -19,6 +19,10 @@ import SpanRegisterLogin from './span-register/span-register';
 import LoginUser from './Login-API/loginAPI';
 import {useNavigate} from 'react-router';
 import RemoveToken from '../token/removeToken';
+import addImageUserOutside from './img-input/add-imgUserOutside';
+import removeImageUserInside from './img-input/remove-imgUserInside';
+import addImagePasswordOutside from './img-input/add-imgPasswordOutside';
+import removeImagePasswordInside from './img-input/removeImgPasswordInside';
 
 
 export default function Login() {
@@ -33,20 +37,38 @@ export default function Login() {
     let [userValue, setUserValue] = useState('');
     const handleInputUserValue = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUserValue(event.currentTarget.value);
-        //Remove img do lado de fora do input
-        removeImageUser();
-        // Add img dentro do input
-        addImageUser()
+        // Verifica se input está preenchido ou não
+        let userImgValidation = event.currentTarget.value;
+        if (userImgValidation.length === 0) {
+            // Add img fora do input
+            addImageUserOutside()
+            //Remove img de dentro do input
+            removeImageUserInside();
+        } else if (userImgValidation.length > 0) {
+            // Add img dentro do input
+            addImageUser()
+            //Remove img do lado de fora do input
+            removeImageUser();
+        }
     }
 
     // Recebe o valor do input de password
     let [passwordValue, setPasswordValue] = useState('');
     const handleInputPasswordValue = (event: React.ChangeEvent<HTMLInputElement>) => {
         setPasswordValue(event.currentTarget.value);
-        // Remove img do lado de fora do input
-        removeImagePassword();
-        // Adiciona img dentro do input
-        addImagePassword()
+        // Verifica se input está preenchido ou não
+        let passwordImgValidation = event.currentTarget.value;
+        if (passwordImgValidation.length === 0) {
+            // Remove img dentro do input
+            removeImagePasswordInside();
+            // Adiciona img fora do input
+            addImagePasswordOutside()
+        }else if (passwordImgValidation.length > 0) {
+            // Remove img do lado de fora do input
+            removeImagePassword();
+            // Adiciona img dentro do input
+            addImagePassword()
+        }
     }
 
     // Recebe o estado do span de erro
